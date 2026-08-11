@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Get Started — ScholarB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/inner-pages.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">ScholarB<span class="dot">.</span></a>
+    <nav class="nav-links">
+      <a href="tutors.html">Find Tutors</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#boards">Boards &amp; Exams</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost btn-sm">Log In</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="tutors.html">Find Tutors</a>
+  <a href="index.html#how-it-works">How It Works</a>
+  <a href="index.html#boards">Boards &amp; Exams</a>
+  <a href="#" class="btn btn-ghost">Log In</a>
+</div>
+
+<div class="onboarding-wrap">
+
+  <div class="progress-steps">
+    <div class="progress-fill" id="progressFill"></div>
+    <div class="p-step active" data-step="1"><div class="circle">1</div><div class="p-label">Academic Profile</div></div>
+    <div class="p-step" data-step="2"><div class="circle">2</div><div class="p-label">Preferences</div></div>
+    <div class="p-step" data-step="3"><div class="circle">3</div><div class="p-label">Demo Slot</div></div>
+    <div class="p-step" data-step="4"><div class="circle">4</div><div class="p-label">Your Details</div></div>
+    <div class="p-step" data-step="5"><div class="circle">5</div><div class="p-label">Verify</div></div>
+  </div>
+
+  <div class="onb-card">
+
+    <!-- STEP 1 — Academic Profile -->
+    <div class="onb-step active" data-step="1">
+      <h2>Tell us about your academics</h2>
+      <p class="step-sub">This helps us match you with the right tutor.</p>
+
+      <div class="field-row">
+        <div class="field"><label>Country</label><select><option>India</option><option>United States</option><option>United Kingdom</option><option>UAE</option></select></div>
+        <div class="field"><label>PIN Code</label><input type="text" placeholder="e.g. 500081"></div>
+      </div>
+      <div class="field"><label>Board of Education</label>
+        <select><option>CBSE</option><option>ICSE</option><option>IGCSE</option><option>IB</option><option>State Board</option></select>
+      </div>
+      <div class="field-row">
+        <div class="field"><label>Grade / Class</label><select><option>Grade 9</option><option>Grade 10</option><option>Grade 11</option><option>Grade 12</option></select></div>
+        <div class="field"><label>Subject</label><select><option>Mathematics</option><option>Physics</option><option>Chemistry</option><option>English</option></select></div>
+      </div>
+      <div class="field"><label>Topics / Chapters (optional)</label><input type="text" placeholder="e.g. Trigonometry, Algebra"></div>
+    </div>
+
+    <!-- STEP 2 — Learning Preferences -->
+    <div class="onb-step" data-step="2">
+      <h2>How do you like to learn?</h2>
+      <p class="step-sub">We'll tailor your tutor match to this.</p>
+
+      <label class="field-label">Preferred Class Mode</label>
+      <div class="choice-grid">
+        <div class="choice-card selected">1-to-1 Online</div>
+        <div class="choice-card">Group Class</div>
+      </div>
+
+      <label class="field-label">Preferred Language</label>
+      <div class="choice-grid">
+        <div class="choice-card selected">English</div>
+        <div class="choice-card">Hindi</div>
+        <div class="choice-card">Telugu</div>
+        <div class="choice-card">Tamil</div>
+      </div>
+
+      <label class="field-label">Learning Style</label>
+      <div class="choice-grid">
+        <div class="choice-card selected">Visual</div>
+        <div class="choice-card">Practice-Based</div>
+        <div class="choice-card">Discussion-Based</div>
+        <div class="choice-card">Structured / Notes</div>
+      </div>
+    </div>
+
+    <!-- STEP 3 — Demo Availability -->
+    <div class="onb-step" data-step="3">
+      <h2>When works for your demo?</h2>
+      <p class="step-sub">Pick a date and time range that suits you.</p>
+
+      <label class="field-label">Preferred Demo Date</label>
+      <div class="date-picker" style="margin-bottom:20px;">
+        <div class="date-chip active"><div>Mon</div><div class="d">12</div></div>
+        <div class="date-chip"><div>Tue</div><div class="d">13</div></div>
+        <div class="date-chip"><div>Wed</div><div class="d">14</div></div>
+        <div class="date-chip"><div>Thu</div><div class="d">15</div></div>
+        <div class="date-chip"><div>Fri</div><div class="d">16</div></div>
+      </div>
+
+      <label class="field-label">Preferred Time Range</label>
+      <div class="choice-grid">
+        <div class="choice-card selected">Morning (8–11 AM)</div>
+        <div class="choice-card">Afternoon (12–4 PM)</div>
+        <div class="choice-card">Evening (5–8 PM)</div>
+        <div class="choice-card">Night (8–10 PM)</div>
+      </div>
+
+      <label class="field-label">General Availability</label>
+      <div class="choice-grid">
+        <div class="choice-card selected">Weekdays</div>
+        <div class="choice-card">Weekends</div>
+      </div>
+    </div>
+
+    <!-- STEP 4 — Your Details -->
+    <div class="onb-step" data-step="4">
+      <h2>Your details</h2>
+      <p class="step-sub">So your tutor knows who they're teaching.</p>
+
+      <div class="field"><label>Student Name</label><input type="text" placeholder="Full name"></div>
+      <div class="field"><label>Parent / Guardian Name</label><input type="text" placeholder="Full name"></div>
+      <div class="field"><label>Email Address</label><input type="email" placeholder="you@example.com"></div>
+      <div class="field"><label>WhatsApp Number</label><input type="tel" placeholder="+91 00000 00000"></div>
+    </div>
+
+    <!-- STEP 5 — Verification -->
+    <div class="onb-step" data-step="5">
+      <h2>Verify &amp; confirm</h2>
+      <p class="step-sub">Last step — verify your contact details.</p>
+
+      <div class="verify-row">
+        <div><strong style="font-size:13.5px;">Email</strong><div style="font-size:12.5px;color:var(--slate);">you@example.com</div></div>
+        <span class="status pending" id="emailStatus">Pending</span>
+      </div>
+      <div class="otp-row">
+        <input maxlength="1" type="text"><input maxlength="1" type="text"><input maxlength="1" type="text"><input maxlength="1" type="text">
+      </div>
+      <button class="btn btn-ghost btn-sm" id="verifyEmailBtn" style="margin-bottom:22px;">Verify Email</button>
+
+      <div class="verify-row">
+        <div><strong style="font-size:13.5px;">WhatsApp</strong><div style="font-size:12.5px;color:var(--slate);">+91 00000 00000</div></div>
+        <span class="status pending" id="waStatus">Pending</span>
+      </div>
+      <div class="otp-row">
+        <input maxlength="1" type="text"><input maxlength="1" type="text"><input maxlength="1" type="text"><input maxlength="1" type="text">
+      </div>
+      <button class="btn btn-ghost btn-sm" id="verifyWaBtn">Verify WhatsApp</button>
+    </div>
+
+    <div class="onb-nav">
+      <button class="btn btn-ghost" id="prevBtn" style="opacity:0;pointer-events:none;">Back</button>
+      <button class="btn btn-primary" id="nextBtn">Continue</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/onboarding.js"></script>
+</body>
+</html>

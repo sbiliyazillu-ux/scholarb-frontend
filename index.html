@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ScholarB — Find the Right Tutor, Achieve Your Goals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">ScholarB<span class="dot">.</span></a>
+
+    <nav class="nav-links">
+      <a href="tutors.html">Find Tutors</a>
+      <a href="index.html#how-it-works">How It Works</a>
+      <a href="index.html#boards">Boards &amp; Exams</a>
+      <a href="#">Become a Tutor</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#" class="btn btn-ghost btn-sm">Log In</a>
+      <a href="onboarding.html" class="btn btn-primary btn-sm">Join Now for Free</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="tutors.html">Find Tutors</a>
+  <a href="index.html#how-it-works">How It Works</a>
+  <a href="index.html#boards">Boards &amp; Exams</a>
+  <a href="#">Become a Tutor</a>
+  <a href="#" class="btn btn-ghost">Log In</a>
+  <a href="onboarding.html" class="btn btn-primary">Join Now for Free</a>
+</div>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero">
+  <svg class="hero-path" viewBox="0 0 620 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M40 60 C 220 20, 300 160, 180 220 S 60 380, 260 400 S 520 340, 560 480"
+      stroke="#E4E2ED" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/>
+    <circle cx="40" cy="60" r="6" fill="#FFB648"/>
+    <circle cx="180" cy="220" r="6" fill="#17B892"/>
+    <circle cx="260" cy="400" r="6" fill="#3452E1"/>
+    <circle cx="560" cy="480" r="6" fill="#FFB648"/>
+  </svg>
+
+  <div class="container">
+    <div class="hero-copy">
+      <span class="eyebrow">SCHOLARB · ONLINE TUTORING</span>
+      <h1>Find the Right Tutor.<br><span class="accent">Achieve Your Goals.</span></h1>
+      <p class="lede">Connect with verified expert tutors for 1-to-1 or group classes.</p>
+      <p class="sub">Personalized learning that helps you excel — matched to your board, grade and goals.</p>
+
+      <div class="hero-cta">
+        <a href="onboarding.html" class="btn btn-primary">Join Now for Free</a>
+        <a href="tutors.html" class="btn btn-ghost">Browse Tutors</a>
+      </div>
+
+      <ul class="hero-feature-list">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Verified &amp; experienced tutors</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Flexible learning modes</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 12l5 5L20 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Better results you can see</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-visual-badge">⭐ 4.9/5 avg rating</div>
+      <div class="hero-visual-card">
+        <div class="hero-visual-avatar">AR</div>
+        <div>
+          <div class="name">Anita Rao</div>
+          <div class="meta">Mathematics · CBSE · 8 yrs exp</div>
+        </div>
+      </div>
+      <div class="hero-visual-card">
+        <div class="hero-visual-avatar">SK</div>
+        <div>
+          <div class="name">Sam Khan</div>
+          <div class="meta">Physics · IB · 6 yrs exp</div>
+        </div>
+      </div>
+      <div class="hero-visual-card">
+        <div class="hero-visual-avatar">MJ</div>
+        <div>
+          <div class="name">Meera Jose</div>
+          <div class="meta">English · IGCSE · 5 yrs exp</div>
+        </div>
+      </div>
+      <div class="hero-stats" style="margin-top:8px;margin-bottom:0;">
+        <div class="hero-stat"><div class="num">12k+</div><div class="label">Verified tutors</div></div>
+        <div class="hero-stat"><div class="num">40+</div><div class="label">Subjects</div></div>
+        <div class="hero-stat"><div class="num">98%</div><div class="label">Demo satisfaction</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ROLE SELECTION ===================== -->
+<section class="roles" id="roles">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">MADE FOR EVERYONE</span>
+      <h2>Whoever you are, ScholarB fits</h2>
+      <p>Pick your role to see how ScholarB helps you specifically.</p>
+    </div>
+
+    <div class="role-tabs" role="tablist">
+      <button class="role-tab" role="tab" data-role="students" aria-selected="true">Students</button>
+      <button class="role-tab" role="tab" data-role="parents" aria-selected="false">Parents</button>
+      <button class="role-tab" role="tab" data-role="teachers" aria-selected="false">Teachers</button>
+    </div>
+
+    <div class="role-panel active" data-panel="students">
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--brand-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3452E1" stroke-width="2"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/><path d="M13 3v5h5"/></svg>
+        </div>
+        <h3>Learn Anytime, Anywhere</h3>
+        <p>Flexible schedules and online classes that fit your routine.</p>
+      </div>
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--mint-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#17B892" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
+        </div>
+        <h3>Revise With Experts</h3>
+        <p>Connect with expert tutors and get personalized learning.</p>
+      </div>
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--amber-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8963A" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+        </div>
+        <h3>Practice &amp; Improve</h3>
+        <p>Target weak areas with focused practice and track improvement.</p>
+      </div>
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--brand-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3452E1" stroke-width="2"><path d="M12 2l2.6 6.6L22 9.2l-5.4 4.6L18.2 21 12 17l-6.2 4 1.6-7.2L2 9.2l7.4-.6z"/></svg>
+        </div>
+        <h3>Free Demo Classes</h3>
+        <p>Try before you commit — book a free demo with any tutor.</p>
+      </div>
+    </div>
+
+    <div class="role-panel" data-panel="parents">
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--mint-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#17B892" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+        </div>
+        <h3>Track Progress With Confidence</h3>
+        <p>Monitor your child's learning, performance and improvement.</p>
+      </div>
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--brand-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3452E1" stroke-width="2"><path d="M12 20V10M12 10L6 4M12 10l6-6"/></svg>
+        </div>
+        <h3>Personalized Learning That Works</h3>
+        <p>Help your child understand concepts deeply and build strong foundations.</p>
+      </div>
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--amber-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8963A" stroke-width="2"><path d="M4 21V9l8-6 8 6v12"/><path d="M9 21v-6h6v6"/></svg>
+        </div>
+        <h3>Better Results, Brighter Future</h3>
+        <p>Monitor progress and help your child achieve academic goals.</p>
+      </div>
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--mint-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#17B892" stroke-width="2"><path d="M21 11.5a8.4 8.4 0 01-9 8.4A8.5 8.5 0 013 12a8.4 8.4 0 018.4-8.4 8.4 8.4 0 018.4 8.4z"/></svg>
+        </div>
+        <h3>Stay Informed, Stay Involved</h3>
+        <p>Receive regular updates and communicate directly with tutors.</p>
+      </div>
+    </div>
+
+    <div class="role-panel" data-panel="teachers">
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--amber-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8963A" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 2v4M16 2v4M3 10h18"/></svg>
+        </div>
+        <h3>Teach Your Way</h3>
+        <p>Manage your schedule and choose how and when you teach.</p>
+      </div>
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--brand-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3452E1" stroke-width="2"><path d="M12 20l9-5-9-5-9 5 9 5z"/><path d="M3 15v4M21 15v4"/></svg>
+        </div>
+        <h3>Powerful Teaching Tools</h3>
+        <p>Access tools for classes, doubt solving and performance tracking.</p>
+      </div>
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--mint-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#17B892" stroke-width="2"><path d="M2 12h4l2-6 4 12 2-6h8"/></svg>
+        </div>
+        <h3>Grow Your Impact</h3>
+        <p>Reach more students and make a bigger difference.</p>
+      </div>
+      <div class="role-card">
+        <div class="icon-wrap" style="background:var(--amber-tint);">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E8963A" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <h3>Support That Empowers</h3>
+        <p>Get dedicated support, training and resources whenever you need them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HOW IT WORKS ===================== -->
+<section class="journey" id="how-it-works">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">THE SCHOLARB PATH</span>
+      <h2>Your learning journey, mapped out</h2>
+      <p>Five simple stops from setting a goal to seeing real progress.</p>
+    </div>
+
+    <div class="journey-trail">
+      <div class="stop">
+        <div class="stop-marker"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <h4>Choose Your Goal</h4>
+        <p>Tell us your board, grade and subject.</p>
+      </div>
+      <div class="stop">
+        <div class="stop-marker"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg></div>
+        <h4>Pick a Tutor</h4>
+        <p>Browse and compare verified expert tutors.</p>
+      </div>
+      <div class="stop">
+        <div class="stop-marker"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg></div>
+        <h4>Book a Free Demo</h4>
+        <p>Try a class with no cost, no commitment.</p>
+      </div>
+      <div class="stop">
+        <div class="stop-marker"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2H6a2 2 0 01-2-2z"/></svg></div>
+        <h4>Start Learning</h4>
+        <p>Begin regular 1-to-1 or group sessions.</p>
+      </div>
+      <div class="stop">
+        <div class="stop-marker"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+        <h4>Track Progress</h4>
+        <p>See measurable growth after every session.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BOARDS & EXAMS ===================== -->
+<section class="boards" id="boards">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">EVERY CURRICULUM COVERED</span>
+      <h2>What are you learning?</h2>
+      <p>Tutors available across every major board, curriculum and competitive exam.</p>
+    </div>
+    <div class="board-grid">
+      <div class="board-chip">CBSE</div>
+      <div class="board-chip">ICSE</div>
+      <div class="board-chip">IGCSE</div>
+      <div class="board-chip">GCSE</div>
+      <div class="board-chip">IB</div>
+      <div class="board-chip">A Levels</div>
+      <div class="board-chip">AP</div>
+      <div class="board-chip">State Boards</div>
+      <div class="board-chip">AS</div>
+      <div class="board-chip">O Level</div>
+      <div class="board-chip">IELTS</div>
+      <div class="board-chip">NTSE</div>
+      <div class="board-chip">NEET</div>
+      <div class="board-chip">Olympiads</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CTA BAND ===================== -->
+<div class="cta-band">
+  <h2>Ready to find your tutor?</h2>
+  <p>Join thousands of students already learning on ScholarB.</p>
+  <a href="onboarding.html" class="btn btn-primary">Join Now for Free</a>
+</div>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">ScholarB<span class="dot">.</span></a>
+        <p style="margin-top:14px;color:var(--slate);font-size:14px;max-width:260px;">Connecting students with verified expert tutors for personalized learning.</p>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <ul>
+          <li><a href="tutors.html">Find Tutors</a></li>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="index.html#boards">Boards &amp; Exams</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Become a Tutor</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ScholarB. All rights reserved.</span>
+      <span>Made for learners everywhere.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
